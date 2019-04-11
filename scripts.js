@@ -10,7 +10,7 @@ function randomChar(){
     var text = "";
     var possible = "abcdefghijklmnñopqrstuvwxyz";
   
-    for (var i = 0; i < 1; i++)
+    for (var i = 0; i < 5; i++)
       text += possible.charAt(Math.floor(Math.random() * possible.length));
   
     return text;
@@ -76,8 +76,9 @@ function generate(){
     }
   }
 
+  var endSoup = items.join("");
 
   var words = document.getElementById("words");
-  words.innerHTML = items;
+  words.innerHTML = endSoup;
   
 }
